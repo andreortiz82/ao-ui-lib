@@ -1,6 +1,6 @@
 {
   "name": "ao-ui-lib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React component lib based on MUI",
   "main": "index.js",
   "scripts": {
@@ -15,6 +15,7 @@
     "ao-design-tokens": "^1.1.1",
     "clsx": "^2.1.0"
   },
+  "type": "module",
   "exports": {
     ".": "./index.js"
   },
