@@ -1,0 +1,19 @@
+.button {
+  font-size: var(--size-font-footnote);
+  font-weight: var(--typography-weight-bold);
+  font-family: var(--typography-family-sans);
+  color: var(--color-primary);
+  background: var(--component-background);
+  border-radius: var(--size-border-radius-4);
+  border: 1px solid var(--component-border);
+  padding: var(--size-base-2) var(--size-base-3);
+  box-shadow: var(--fx-shadow-sm);
+  transition: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--component-background-active);
+    border: 1px solid var(--component-border);
+    box-shadow: none;
+  }
+}
