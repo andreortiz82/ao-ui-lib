@@ -1,2 +1,3 @@
 import Button from "./components/atoms/Button";
-export { Button };
+import Input from "./components/atoms/Input";
+export { Button, Input };
