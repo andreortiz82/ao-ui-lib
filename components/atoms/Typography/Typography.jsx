@@ -1,10 +1,19 @@
-
-  import React from "react";
+import React from "react";
 import ThemeWrapper from "../../theme/ThemeWrapper";
-  import { Typography as MuiTypography } from '@mui/joy';
+import { Typography as AntTypography } from "antd";
 
-function Typography(props) {
-  return <ThemeWrapper><MuiTypography {...props}>{props.children}</MuiTypography></ThemeWrapper>
-}
+export const Typography = (props) => {
+  return (
+    <ThemeWrapper>
+      <AntTypography {...props}>{props.children}</AntTypography>
+    </ThemeWrapper>
+  );
+};
 
-export default Typography;
+Typography.Text = (props) => {
+  return <AntTypography.Text {...props}>{props.children}</AntTypography.Text>;
+};
+
+Typography.Title = (props) => {
+  return <AntTypography.Title {...props}>{props.children}</AntTypography.Title>;
+};

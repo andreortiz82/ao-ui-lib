@@ -15,10 +15,7 @@
     "url": "https://github.com/andreortiz82/ao-ui-lib.git"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.4",
-    "@emotion/styled": "^11.11.5",
-    "@mui/base": "^5.0.0-beta.40",
-    "@mui/joy": "^5.0.0-beta.36",
+    "antd": "^5.17.0",
     "ao-design-tokens": "^1.1.2",
     "clsx": "^2.1.0"
   },

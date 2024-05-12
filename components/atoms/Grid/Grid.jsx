@@ -1,10 +1,20 @@
-
-  import React from "react";
+import React from "react";
 import ThemeWrapper from "../../theme/ThemeWrapper";
-  import { Grid as MuiGrid } from '@mui/joy';
+import { Row as AntRow } from "antd";
+import { Col as AntCol } from "antd";
 
-function Grid(props) {
-  return <ThemeWrapper><MuiGrid {...props}>{props.children}</MuiGrid></ThemeWrapper>
-}
+export const Row = (props) => {
+  return (
+    <ThemeWrapper>
+      <AntRow {...props}>{props.children}</AntRow>
+    </ThemeWrapper>
+  );
+};
 
-export default Grid;
+export const Col = (props) => {
+  return (
+    <ThemeWrapper>
+      <AntCol {...props}>{props.children}</AntCol>
+    </ThemeWrapper>
+  );
+};

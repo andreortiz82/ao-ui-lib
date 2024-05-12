@@ -1,10 +1,8 @@
 
   import React from "react";
 import ThemeWrapper from "../../theme/ThemeWrapper";
-  import { List as MuiList } from '@mui/joy';
+  import { List as AntList } from 'antd';
 
-function List(props) {
-  return <ThemeWrapper><MuiList {...props}>{props.children}</MuiList></ThemeWrapper>
+export const List = (props) => {
+  return <ThemeWrapper><AntList {...props}>{props.children}</AntList></ThemeWrapper>
 }
-
-export default List;

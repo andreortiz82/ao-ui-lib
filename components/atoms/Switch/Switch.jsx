@@ -1,10 +1,8 @@
 
   import React from "react";
 import ThemeWrapper from "../../theme/ThemeWrapper";
-  import { Switch as MuiSwitch } from '@mui/joy';
+  import { Switch as AntSwitch } from 'antd';
 
-function Switch(props) {
-  return <ThemeWrapper><MuiSwitch {...props}>{props.children}</MuiSwitch></ThemeWrapper>
+export const Switch = (props) => {
+  return <ThemeWrapper><AntSwitch {...props}>{props.children}</AntSwitch></ThemeWrapper>
 }
-
-export default Switch;

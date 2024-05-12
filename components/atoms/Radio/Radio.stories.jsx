@@ -1,13 +1,15 @@
 import React from 'react';
-import Radio from './Radio';
+import {Radio} from './Radio';
+import { api } from "./api.js";
 
 export default {
     title: "Atoms/Radio",
     component: Radio,
     tags: ["autodocs"],
+    argTypes: api,
 } 
 export const Example = {
-    args: {
-      children: "Radio",
-    },
+    render: (args) => (
+        <Radio {...args}>Radio</Radio>
+    ),
   };

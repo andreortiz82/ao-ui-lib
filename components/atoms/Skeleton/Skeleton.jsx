@@ -1,10 +1,8 @@
 
   import React from "react";
 import ThemeWrapper from "../../theme/ThemeWrapper";
-  import { Skeleton as MuiSkeleton } from '@mui/joy';
+  import { Skeleton as AntSkeleton } from 'antd';
 
-function Skeleton(props) {
-  return <ThemeWrapper><MuiSkeleton {...props}>{props.children}</MuiSkeleton></ThemeWrapper>
+export const Skeleton = (props) => {
+  return <ThemeWrapper><AntSkeleton {...props}>{props.children}</AntSkeleton></ThemeWrapper>
 }
-
-export default Skeleton;

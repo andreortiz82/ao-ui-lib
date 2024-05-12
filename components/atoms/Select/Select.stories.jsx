@@ -1,13 +1,15 @@
 import React from 'react';
-import Select from './Select';
+import {Select} from './Select';
+import { api } from "./api.js";
 
 export default {
     title: "Atoms/Select",
     component: Select,
     tags: ["autodocs"],
+    argTypes: api,
 } 
 export const Example = {
-    args: {
-      children: "Select",
-    },
+    render: (args) => (
+        <Select {...args}>Select</Select>
+    ),
   };

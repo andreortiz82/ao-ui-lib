@@ -1,13 +1,17 @@
-import React from 'react';
-import Grid from './Grid';
+import React from "react";
+import { Row, Col } from "./Grid";
+import { api } from "./api.js";
 
 export default {
-    title: "Atoms/Grid",
-    component: Grid,
-    tags: ["autodocs"],
-} 
+  title: "Atoms/Grid",
+  tags: ["autodocs"],
+  argTypes: api,
+};
 export const Example = {
-    args: {
-      children: "Grid",
-    },
-  };
+  render: (args) => (
+    <Row>
+      <Col span={12}>col-12</Col>
+      <Col span={12}>col-12</Col>
+    </Row>
+  ),
+};

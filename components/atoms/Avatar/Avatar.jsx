@@ -1,13 +1,11 @@
 import React from "react";
 import ThemeWrapper from "../../theme/ThemeWrapper";
-import { Avatar as MuiAvatar } from "@mui/joy";
+import { Avatar as AntAvatar } from "antd";
 
-function Avatar(props) {
+export const Avatar = (props) => {
   return (
     <ThemeWrapper>
-      <MuiAvatar {...props}>{props.children}</MuiAvatar>
+      <AntAvatar {...props}>{props.children}</AntAvatar>
     </ThemeWrapper>
   );
-}
-
-export default Avatar;
+};

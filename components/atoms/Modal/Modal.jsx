@@ -1,10 +1,8 @@
 
   import React from "react";
 import ThemeWrapper from "../../theme/ThemeWrapper";
-  import { Modal as MuiModal } from '@mui/joy';
+  import { Modal as AntModal } from 'antd';
 
-function Modal(props) {
-  return <ThemeWrapper><MuiModal {...props}>{props.children}</MuiModal></ThemeWrapper>
+export const Modal = (props) => {
+  return <ThemeWrapper><AntModal {...props}>{props.children}</AntModal></ThemeWrapper>
 }
-
-export default Modal;

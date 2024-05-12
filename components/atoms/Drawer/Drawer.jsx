@@ -1,10 +1,8 @@
 
   import React from "react";
 import ThemeWrapper from "../../theme/ThemeWrapper";
-  import { Drawer as MuiDrawer } from '@mui/joy';
+  import { Drawer as AntDrawer } from 'antd';
 
-function Drawer(props) {
-  return <ThemeWrapper><MuiDrawer {...props}>{props.children}</MuiDrawer></ThemeWrapper>
+export const Drawer = (props) => {
+  return <ThemeWrapper><AntDrawer {...props}>{props.children}</AntDrawer></ThemeWrapper>
 }
-
-export default Drawer;

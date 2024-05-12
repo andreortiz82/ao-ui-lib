@@ -1,10 +1,8 @@
 
   import React from "react";
 import ThemeWrapper from "../../theme/ThemeWrapper";
-  import { Menu as MuiMenu } from '@mui/joy';
+  import { Menu as AntMenu } from 'antd';
 
-function Menu(props) {
-  return <ThemeWrapper><MuiMenu {...props}>{props.children}</MuiMenu></ThemeWrapper>
+export const Menu = (props) => {
+  return <ThemeWrapper><AntMenu {...props}>{props.children}</AntMenu></ThemeWrapper>
 }
-
-export default Menu;

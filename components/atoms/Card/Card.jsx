@@ -1,10 +1,11 @@
-
-  import React from "react";
+import React from "react";
 import ThemeWrapper from "../../theme/ThemeWrapper";
-  import { Card as MuiCard } from '@mui/joy';
+import { Card as AntCard } from "antd";
 
-function Card(props) {
-  return <ThemeWrapper><MuiCard {...props}>{props.children}</MuiCard></ThemeWrapper>
-}
-
-export default Card;
+export const Card = (props) => {
+  return (
+    <ThemeWrapper>
+      <AntCard {...props}>{props.children}</AntCard>
+    </ThemeWrapper>
+  );
+};

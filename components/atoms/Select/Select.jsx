@@ -1,10 +1,8 @@
 
   import React from "react";
 import ThemeWrapper from "../../theme/ThemeWrapper";
-  import { Select as MuiSelect } from '@mui/joy';
+  import { Select as AntSelect } from 'antd';
 
-function Select(props) {
-  return <ThemeWrapper><MuiSelect {...props}>{props.children}</MuiSelect></ThemeWrapper>
+export const Select = (props) => {
+  return <ThemeWrapper><AntSelect {...props}>{props.children}</AntSelect></ThemeWrapper>
 }
-
-export default Select;

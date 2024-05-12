@@ -4,46 +4,75 @@ import fs from "fs";
 import path from "path";
 
 const components = [
-  "Avatar",
-  "Alert",
-  "Badge",
   "Button",
-  "Chip",
-  "Divider",
-  "Input",
-  "ButtonGroup",
-  "Checkbox",
-  "Radio",
-  "Select",
-  "Switch",
-  "Textarea",
-  "ToggleButtonGroup",
-  "List",
-  "ListItem",
-  "Table",
-  "Tooltip",
+  "FloatButton",
   "Typography",
-  "CircularProgress",
-  "LinearProgress",
-  "Modal",
-  "Skeleton",
-  "Snackbar",
-  "Card",
-  "Accordion",
-  "Sheet",
-  "Breadcrumbs",
-  "Drawer",
-  "Link",
-  "Menu",
-  "Stepper",
-  "Tabs",
-  "Box",
+  "Divider",
+  "Flex",
   "Grid",
-  "Stack",
+  "Layout",
+  "Space",
+  "Anchor",
+  "Breadcrumb",
+  "Dropdown",
+  "Menu",
+  "Pagination",
+  "Steps",
+  "AutoComplete",
+  "Cascader",
+  "Checkbox",
+  "ColorPicker",
+  "DatePicker",
+  "Form",
+  "Input",
+  "InputNumber",
+  "Mentions",
+  "Radio",
+  "Rate",
+  "Select",
+  "Slider",
+  "Switch",
+  "TimePicker",
+  "Transfer",
+  "TreeSelect",
+  "Upload",
+  "Avatar",
+  "Badge",
+  "Calendar",
+  "Card",
+  "Carousel",
+  "Collapse",
+  "Descriptions",
+  "Empty",
+  "Image",
+  "List",
+  "Popover",
+  "Statistic",
+  "Segmented",
+  "Table",
+  "Tabs",
+  "Tag",
+  "Timeline",
+  "Tooltip",
+  "Tour",
+  "Tree",
+  "Alert",
+  "Drawer",
+  "Message",
+  "Modal",
+  "Notification",
+  "Popconfirm",
+  "Progress",
+  "Result",
+  "Skeleton",
+  "Spin",
+  "Watermark",
+  "Affix",
+  "App",
 ];
 
 // Base directory where the component directories will be created
-const baseDir = "./DEMO";
+const baseDir = "./components";
 const componentsDir = `${baseDir}/atoms`;
 const storiesDir = componentsDir;
 
@@ -65,30 +94,30 @@ const generateComponentFileContent = (componentName) => {
   return `
   import React from "react";
 import ThemeWrapper from "../../theme/ThemeWrapper";
-  import { ${componentName} as Mui${componentName} } from '@mui/joy';
+  import { ${componentName} as Ant${componentName} } from 'antd';
 
-function ${componentName}(props) {
-  return <ThemeWrapper><Mui${componentName} {...props}>{props.children}</Mui${componentName}></ThemeWrapper>
+export const ${componentName} = (props) => {
+  return <ThemeWrapper><Ant${componentName} {...props}>{props.children}</Ant${componentName}></ThemeWrapper>
 }
-
-export default ${componentName};
 `;
 };
 
 // Function to generate the .stories.tsx file content
 const generateStoryFileContent = (componentName) => {
   return `import React from 'react';
-import ${componentName} from './${componentName}';
+import {${componentName}} from './${componentName}';
+import { api } from "./api.js";
 
 export default {
     title: "Atoms/${componentName}",
     component: ${componentName},
     tags: ["autodocs"],
+    argTypes: api,
 } 
 export const Example = {
-    args: {
-      children: "${componentName}",
-    },
+    render: (args) => (
+        <${componentName} {...args}>${componentName}</${componentName}>
+    ),
   };
 `;
 };

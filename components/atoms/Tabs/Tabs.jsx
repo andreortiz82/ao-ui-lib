@@ -1,10 +1,8 @@
 
   import React from "react";
 import ThemeWrapper from "../../theme/ThemeWrapper";
-  import { Tabs as MuiTabs } from '@mui/joy';
+  import { Tabs as AntTabs } from 'antd';
 
-function Tabs(props) {
-  return <ThemeWrapper><MuiTabs {...props}>{props.children}</MuiTabs></ThemeWrapper>
+export const Tabs = (props) => {
+  return <ThemeWrapper><AntTabs {...props}>{props.children}</AntTabs></ThemeWrapper>
 }
-
-export default Tabs;

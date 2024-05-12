@@ -1,10 +1,8 @@
 
   import React from "react";
 import ThemeWrapper from "../../theme/ThemeWrapper";
-  import { Input as MuiInput } from '@mui/joy';
+  import { Input as AntInput } from 'antd';
 
-function Input(props) {
-  return <ThemeWrapper><MuiInput {...props}>{props.children}</MuiInput></ThemeWrapper>
+export const Input = (props) => {
+  return <ThemeWrapper><AntInput {...props}>{props.children}</AntInput></ThemeWrapper>
 }
-
-export default Input;

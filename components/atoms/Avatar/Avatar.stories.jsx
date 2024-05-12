@@ -1,14 +1,18 @@
 import React from "react";
-import Avatar from "./Avatar";
+import { Avatar } from "./Avatar";
+import { api } from "./api.js";
 
 export default {
   title: "Atoms/Avatar",
   component: Avatar,
   tags: ["autodocs"],
+  argTypes: api,
 };
 export const Example = {
   args: {
-    alt: "Andre Ortiz",
-    src: "https://gravatar.com/avatar/879046b0eefad5903a2a0bd69911530930cf2d8985702c0bc1a54fc2404e7d15?size=100",
+    size: 64,
+    src: "https://picsum.photos/100/100?random=1",
+    shape: "circle",
   },
+  render: (args) => <Avatar {...args} />,
 };

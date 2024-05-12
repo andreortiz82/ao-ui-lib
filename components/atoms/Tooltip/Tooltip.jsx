@@ -1,10 +1,8 @@
 
   import React from "react";
 import ThemeWrapper from "../../theme/ThemeWrapper";
-  import { Tooltip as MuiTooltip } from '@mui/joy';
+  import { Tooltip as AntTooltip } from 'antd';
 
-function Tooltip(props) {
-  return <ThemeWrapper><MuiTooltip {...props}>{props.children}</MuiTooltip></ThemeWrapper>
+export const Tooltip = (props) => {
+  return <ThemeWrapper><AntTooltip {...props}>{props.children}</AntTooltip></ThemeWrapper>
 }
-
-export default Tooltip;

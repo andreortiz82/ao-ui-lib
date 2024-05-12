@@ -1,20 +1,15 @@
 import React from "react";
-import { CssVarsProvider, extendTheme } from "@mui/joy/styles";
-import { palette } from "./palette";
+import { ConfigProvider } from "antd";
 
-const theme = extendTheme({
-  cssVarPrefix: "ao",
-  colorSchemes: {
-    light: { palette },
-    dark: { palette },
+const theme = {
+  token: {},
+  components: {
+    Button: {},
   },
-  spacing: {},
-  typography: {},
-  variants: {},
-});
+};
 
 function ThemeWrapper({ children }) {
-  return <CssVarsProvider theme={theme}>{children}</CssVarsProvider>;
+  return <ConfigProvider theme={theme}>{children}</ConfigProvider>;
 }
 
 export default ThemeWrapper;

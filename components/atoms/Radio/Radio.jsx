@@ -1,10 +1,8 @@
 
   import React from "react";
 import ThemeWrapper from "../../theme/ThemeWrapper";
-  import { Radio as MuiRadio } from '@mui/joy';
+  import { Radio as AntRadio } from 'antd';
 
-function Radio(props) {
-  return <ThemeWrapper><MuiRadio {...props}>{props.children}</MuiRadio></ThemeWrapper>
+export const Radio = (props) => {
+  return <ThemeWrapper><AntRadio {...props}>{props.children}</AntRadio></ThemeWrapper>
 }
-
-export default Radio;

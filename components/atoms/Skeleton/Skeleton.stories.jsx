@@ -1,13 +1,15 @@
 import React from 'react';
-import Skeleton from './Skeleton';
+import {Skeleton} from './Skeleton';
+import { api } from "./api.js";
 
 export default {
     title: "Atoms/Skeleton",
     component: Skeleton,
     tags: ["autodocs"],
+    argTypes: api,
 } 
 export const Example = {
-    args: {
-      children: "Skeleton",
-    },
+    render: (args) => (
+        <Skeleton {...args}>Skeleton</Skeleton>
+    ),
   };

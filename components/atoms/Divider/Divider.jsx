@@ -1,10 +1,8 @@
 
   import React from "react";
 import ThemeWrapper from "../../theme/ThemeWrapper";
-  import { Divider as MuiDivider } from '@mui/joy';
+  import { Divider as AntDivider } from 'antd';
 
-function Divider(props) {
-  return <ThemeWrapper><MuiDivider {...props}>{props.children}</MuiDivider></ThemeWrapper>
+export const Divider = (props) => {
+  return <ThemeWrapper><AntDivider {...props}>{props.children}</AntDivider></ThemeWrapper>
 }
-
-export default Divider;

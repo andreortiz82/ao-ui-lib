@@ -1,10 +1,11 @@
-
-  import React from "react";
+import React from "react";
 import ThemeWrapper from "../../theme/ThemeWrapper";
-  import { Badge as MuiBadge } from '@mui/joy';
+import { Badge as AntBadge } from "antd";
 
-function Badge(props) {
-  return <ThemeWrapper><MuiBadge {...props}>{props.children}</MuiBadge></ThemeWrapper>
-}
-
-export default Badge;
+export const Badge = (props) => {
+  return (
+    <ThemeWrapper>
+      <AntBadge {...props}>{props.children}</AntBadge>
+    </ThemeWrapper>
+  );
+};

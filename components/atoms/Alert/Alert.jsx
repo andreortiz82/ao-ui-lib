@@ -1,13 +1,11 @@
 import React from "react";
 import ThemeWrapper from "../../theme/ThemeWrapper";
-import { Alert as MuiAlert } from "@mui/joy";
+import { Alert as AntAlert } from "antd";
 
-function Alert(props) {
+export const Alert = (props) => {
   return (
     <ThemeWrapper>
-      <MuiAlert {...props}>{props.children}</MuiAlert>
+      <AntAlert {...props}>{props.children}</AntAlert>
     </ThemeWrapper>
   );
-}
-
-export default Alert;
+};

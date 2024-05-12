@@ -1,10 +1,8 @@
 
   import React from "react";
 import ThemeWrapper from "../../theme/ThemeWrapper";
-  import { Checkbox as MuiCheckbox } from '@mui/joy';
+  import { Checkbox as AntCheckbox } from 'antd';
 
-function Checkbox(props) {
-  return <ThemeWrapper><MuiCheckbox {...props}>{props.children}</MuiCheckbox></ThemeWrapper>
+export const Checkbox = (props) => {
+  return <ThemeWrapper><AntCheckbox {...props}>{props.children}</AntCheckbox></ThemeWrapper>
 }
-
-export default Checkbox;

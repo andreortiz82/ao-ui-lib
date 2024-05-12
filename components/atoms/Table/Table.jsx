@@ -1,10 +1,8 @@
 
   import React from "react";
 import ThemeWrapper from "../../theme/ThemeWrapper";
-  import { Table as MuiTable } from '@mui/joy';
+  import { Table as AntTable } from 'antd';
 
-function Table(props) {
-  return <ThemeWrapper><MuiTable {...props}>{props.children}</MuiTable></ThemeWrapper>
+export const Table = (props) => {
+  return <ThemeWrapper><AntTable {...props}>{props.children}</AntTable></ThemeWrapper>
 }
-
-export default Table;
