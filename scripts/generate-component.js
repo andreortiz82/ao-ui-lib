@@ -1,3 +1,5 @@
+// Desiged for a single component to be created in a directory structure
+
 import fs from "fs";
 import path from "path";
 
@@ -10,7 +12,7 @@ if (!componentName) {
 }
 
 // Base directory where the component directory will be created
-const baseDir = "./components/atoms";
+const baseDir = "./DEMO/atoms";
 
 // Ensure the base directory exists
 if (!fs.existsSync(baseDir)) {

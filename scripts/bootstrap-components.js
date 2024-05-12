@@ -1,3 +1,5 @@
+// Desiged for a collection of components to be created in a directory structure
+
 import fs from "fs";
 import path from "path";
 
@@ -41,7 +43,7 @@ const components = [
 ];
 
 // Base directory where the component directories will be created
-const baseDir = "./components";
+const baseDir = "./DEMO";
 const componentsDir = `${baseDir}/atoms`;
 const storiesDir = componentsDir;
 

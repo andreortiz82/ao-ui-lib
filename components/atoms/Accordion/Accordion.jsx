@@ -14,6 +14,8 @@ function Accordion(props) {
     accordionDetailsProps,
   } = props;
 
+  // console.log("AccordionDetails", JSON.stringify(AccordionDetails));
+
   return (
     <ThemeWrapper>
       <AccordionGroup {...accordionGroupProps}>

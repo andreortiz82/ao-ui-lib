@@ -11,18 +11,6 @@ const theme = extendTheme({
   spacing: {},
   typography: {},
   variants: {},
-  // components: {
-  //   JoyButton: {
-  //     styleOverrides: {
-  //       root: ({ ownerState }) => ({
-  //         borderRadius: "var(--size-border-radius-pill)",
-  //         ...(ownerState.size === "md" && {
-  //           paddingInline: "var(--size-base-5)",
-  //         }),
-  //       }),
-  //     },
-  //   },
-  // },
 });
 
 function ThemeWrapper({ children }) {

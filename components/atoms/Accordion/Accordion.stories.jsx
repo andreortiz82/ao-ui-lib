@@ -6,6 +6,7 @@ export default {
   component: Accordion,
   tags: ["autodocs"],
 };
+
 export const Example = {
   args: {
     accordionGroupProps: {},
