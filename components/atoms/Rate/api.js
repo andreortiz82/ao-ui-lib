@@ -1,116 +1,116 @@
-// Rate Props 
+// Rate Props
 
 export const api = {
-    "allowClear": {
-        "control": {
-            "type": "boolean"
-        },
-        "description": "Whether to allow clear when click again",
-        "default": "true"
+  allowClear: {
+    control: {
+      type: "boolean",
     },
-    "allowHalf": {
-        "control": {
-            "type": "boolean"
-        },
-        "description": "Whether to allow semi selection",
-        "default": "false"
+    description: "Whether to allow clear when click again",
+    default: "true",
+  },
+  allowHalf: {
+    control: {
+      type: "boolean",
     },
-    "autoFocus": {
-        "control": {
-            "type": "boolean"
-        },
-        "description": "If get focus when component mounted",
-        "default": "false"
+    description: "Whether to allow semi selection",
+    default: "false",
+  },
+  autoFocus: {
+    control: {
+      type: "boolean",
     },
-    "character": {
-        "control": {
-            "type": "ReactNode | (RateProps) => ReactNode"
-        },
-        "description": "The custom character of rate",
-        "default": "<StarFilled />"
+    description: "If get focus when component mounted",
+    default: "false",
+  },
+  character: {
+    control: {
+      type: "ReactNode | (RateProps) => ReactNode",
     },
-    "className": {
-        "control": {
-            "type": "string"
-        },
-        "description": "The custom class name of rate",
-        "default": "-"
+    description: "The custom character of rate",
+    default: "<StarFilled />",
+  },
+  className: {
+    control: {
+      type: "string",
     },
-    "count": {
-        "control": {
-            "type": "number"
-        },
-        "description": "Star count",
-        "default": "5"
+    description: "The custom class name of rate",
+    default: "-",
+  },
+  count: {
+    control: {
+      type: "number",
     },
-    "defaultValue": {
-        "control": {
-            "type": "number"
-        },
-        "description": "The default value",
-        "default": "0"
+    description: "Star count",
+    default: "5",
+  },
+  defaultValue: {
+    control: {
+      type: "number",
     },
-    "disabled": {
-        "control": {
-            "type": "boolean"
-        },
-        "description": "If read only, unable to interact",
-        "default": "false"
+    description: "The default value",
+    default: "0",
+  },
+  disabled: {
+    control: {
+      type: "boolean",
     },
-    "style": {
-        "control": {
-            "type": "CSSProperties"
-        },
-        "description": "The custom style object of rate",
-        "default": "-"
+    description: "If read only, unable to interact",
+    default: "false",
+  },
+  style: {
+    control: {
+      type: "CSSProperties",
     },
-    "tooltips": {
-        "control": {
-            "type": "string[]"
-        },
-        "description": "Customize tooltip by each character",
-        "default": "-"
+    description: "The custom style object of rate",
+    default: "-",
+  },
+  tooltips: {
+    control: {
+      type: "string[]",
     },
-    "value": {
-        "control": {
-            "type": "number"
-        },
-        "description": "The current value",
-        "default": "-"
+    description: "Customize tooltip by each character",
+    default: "-",
+  },
+  value: {
+    control: {
+      type: "number",
     },
-    "onBlur": {
-        "control": {
-            "type": "function()"
-        },
-        "description": "Callback when component lose focus",
-        "default": "-"
+    description: "The current value",
+    default: "-",
+  },
+  onBlur: {
+    control: {
+      type: "function()",
     },
-    "onChange": {
-        "control": {
-            "type": "function(value: number)"
-        },
-        "description": "Callback when select value",
-        "default": "-"
+    description: "Callback when component lose focus",
+    default: "-",
+  },
+  onChange: {
+    control: {
+      type: "function(value: number)",
     },
-    "onFocus": {
-        "control": {
-            "type": "function()"
-        },
-        "description": "Callback when component get focus",
-        "default": "-"
+    description: "Callback when select value",
+    default: "-",
+  },
+  onFocus: {
+    control: {
+      type: "function()",
     },
-    "onHoverChange": {
-        "control": {
-            "type": "function(value: number)"
-        },
-        "description": "Callback when hover item",
-        "default": "-"
+    description: "Callback when component get focus",
+    default: "-",
+  },
+  onHoverChange: {
+    control: {
+      type: "function(value: number)",
     },
-    "onKeyDown": {
-        "control": {
-            "type": "function(event)"
-        },
-        "description": "Callback when keydown on component",
-        "default": "-"
-    }
-}
+    description: "Callback when hover item",
+    default: "-",
+  },
+  onKeyDown: {
+    control: {
+      type: "function(event)",
+    },
+    description: "Callback when keydown on component",
+    default: "-",
+  },
+};

@@ -15,6 +15,7 @@
     "url": "https://github.com/andreortiz82/ao-ui-lib.git"
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.1.5",
     "antd": "^5.17.0",
     "ao-design-tokens": "^1.1.2",
     "clsx": "^2.1.0"

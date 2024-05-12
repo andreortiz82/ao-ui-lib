@@ -1,74 +1,74 @@
-// Statistic Props 
+// Statistic Props
 
 export const api = {
-    "decimalSeparator": {
-        "control": {
-            "type": "string"
-        },
-        "description": "The decimal separator",
-        "default": "."
+  decimalSeparator: {
+    control: {
+      type: "string",
     },
-    "formatter": {
-        "control": {
-            "type": "(value) => ReactNode"
-        },
-        "description": "Customize value display logic",
-        "default": "-"
+    description: "The decimal separator",
+    default: ".",
+  },
+  formatter: {
+    control: {
+      type: "(value) => ReactNode",
     },
-    "groupSeparator": {
-        "control": {
-            "type": "string"
-        },
-        "description": "Group separator",
-        "default": ","
+    description: "Customize value display logic",
+    default: "-",
+  },
+  groupSeparator: {
+    control: {
+      type: "string",
     },
-    "loading": {
-        "control": {
-            "type": "boolean"
-        },
-        "description": "Loading status of Statistic",
-        "default": "false"
+    description: "Group separator",
+    default: ",",
+  },
+  loading: {
+    control: {
+      type: "boolean",
     },
-    "precision": {
-        "control": {
-            "type": "number"
-        },
-        "description": "The precision of input value",
-        "default": "-"
+    description: "Loading status of Statistic",
+    default: "false",
+  },
+  precision: {
+    control: {
+      type: "number",
     },
-    "prefix": {
-        "control": {
-            "type": "ReactNode"
-        },
-        "description": "The prefix node of value",
-        "default": "-"
+    description: "The precision of input value",
+    default: "-",
+  },
+  prefix: {
+    control: {
+      type: "ReactNode",
     },
-    "suffix": {
-        "control": {
-            "type": "ReactNode"
-        },
-        "description": "The suffix node of value",
-        "default": "-"
+    description: "The prefix node of value",
+    default: "-",
+  },
+  suffix: {
+    control: {
+      type: "ReactNode",
     },
-    "title": {
-        "control": {
-            "type": "ReactNode"
-        },
-        "description": "Display title",
-        "default": "-"
+    description: "The suffix node of value",
+    default: "-",
+  },
+  title: {
+    control: {
+      type: "ReactNode",
     },
-    "value": {
-        "control": {
-            "type": "string | number"
-        },
-        "description": "Display value",
-        "default": "-"
+    description: "Display title",
+    default: "-",
+  },
+  value: {
+    control: {
+      type: "string | number",
     },
-    "valueStyle": {
-        "control": {
-            "type": "CSSProperties"
-        },
-        "description": "Set value section style",
-        "default": "-"
-    }
-}
+    description: "Display value",
+    default: "-",
+  },
+  valueStyle: {
+    control: {
+      type: "CSSProperties",
+    },
+    description: "Set value section style",
+    default: "-",
+  },
+};

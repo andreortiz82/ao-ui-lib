@@ -1,8 +1,6 @@
-
-  import React from "react";
-import ThemeWrapper from "../../theme/ThemeWrapper";
-  import { Notification as AntNotification } from 'antd';
+import React from "react";
+import { Notification as AntNotification } from "antd";
 
 export const Notification = (props) => {
-  return <ThemeWrapper><AntNotification {...props}>{props.children}</AntNotification></ThemeWrapper>
-}
+  return <AntNotification {...props}>{props.children}</AntNotification>;
+};

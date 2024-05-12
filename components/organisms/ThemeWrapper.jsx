@@ -2,14 +2,19 @@ import React from "react";
 import { ConfigProvider } from "antd";
 
 const theme = {
-  token: {},
+  token: {
+    colorPrimary: "#000",
+    borderRadius: 100,
+    colorBgContainer: "#FFF",
+  },
+
   components: {
     Button: {},
   },
 };
 
-function ThemeWrapper({ children }) {
+export const ThemeWrapper = ({ children }) => {
   return <ConfigProvider theme={theme}>{children}</ConfigProvider>;
-}
+};
 
 export default ThemeWrapper;

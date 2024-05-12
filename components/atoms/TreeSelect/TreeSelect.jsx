@@ -1,8 +1,6 @@
-
-  import React from "react";
-import ThemeWrapper from "../../theme/ThemeWrapper";
-  import { TreeSelect as AntTreeSelect } from 'antd';
+import React from "react";
+import { TreeSelect as AntTreeSelect } from "antd";
 
 export const TreeSelect = (props) => {
-  return <ThemeWrapper><AntTreeSelect {...props}>{props.children}</AntTreeSelect></ThemeWrapper>
-}
+  return <AntTreeSelect {...props}>{props.children}</AntTreeSelect>;
+};

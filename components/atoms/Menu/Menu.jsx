@@ -1,8 +1,10 @@
-
-  import React from "react";
-import ThemeWrapper from "../../theme/ThemeWrapper";
-  import { Menu as AntMenu } from 'antd';
+import React from "react";
+import { Menu as AntMenu } from "antd";
 
 export const Menu = (props) => {
-  return <ThemeWrapper><AntMenu {...props}>{props.children}</AntMenu></ThemeWrapper>
-}
+  return <AntMenu {...props}>{props.children}</AntMenu>;
+};
+
+Menu.Item = AntMenu.Item;
+Menu.SubMenu = AntMenu.SubMenu;
+Menu.Divider = AntMenu.Divider;

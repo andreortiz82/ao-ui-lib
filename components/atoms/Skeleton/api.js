@@ -1,46 +1,46 @@
-// Skeleton Props 
+// Skeleton Props
 
 export const api = {
-    "active": {
-        "control": {
-            "type": "boolean"
-        },
-        "description": "Show animation effect",
-        "default": "false"
+  active: {
+    control: {
+      type: "boolean",
     },
-    "avatar": {
-        "control": {
-            "type": "boolean | SkeletonAvatarProps"
-        },
-        "description": "Show avatar placeholder",
-        "default": "false"
+    description: "Show animation effect",
+    default: "false",
+  },
+  avatar: {
+    control: {
+      type: "boolean | SkeletonAvatarProps",
     },
-    "loading": {
-        "control": {
-            "type": "boolean"
-        },
-        "description": "Display the skeleton when true",
-        "default": "-"
+    description: "Show avatar placeholder",
+    default: "false",
+  },
+  loading: {
+    control: {
+      type: "boolean",
     },
-    "paragraph": {
-        "control": {
-            "type": "boolean | SkeletonParagraphProps"
-        },
-        "description": "Show paragraph placeholder",
-        "default": "true"
+    description: "Display the skeleton when true",
+    default: "-",
+  },
+  paragraph: {
+    control: {
+      type: "boolean | SkeletonParagraphProps",
     },
-    "round": {
-        "control": {
-            "type": "boolean"
-        },
-        "description": "Show paragraph and title radius when true",
-        "default": "false"
+    description: "Show paragraph placeholder",
+    default: "true",
+  },
+  round: {
+    control: {
+      type: "boolean",
     },
-    "title": {
-        "control": {
-            "type": "boolean | SkeletonTitleProps"
-        },
-        "description": "Show title placeholder",
-        "default": "true"
-    }
-}
+    description: "Show paragraph and title radius when true",
+    default: "false",
+  },
+  title: {
+    control: {
+      type: "boolean | SkeletonTitleProps",
+    },
+    description: "Show title placeholder",
+    default: "true",
+  },
+};

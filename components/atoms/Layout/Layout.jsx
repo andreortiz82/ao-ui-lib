@@ -1,13 +1,8 @@
 import React from "react";
-import ThemeWrapper from "../../theme/ThemeWrapper";
 import { Layout as AntLayout } from "antd";
 
 export const Layout = (props) => {
-  return (
-    <ThemeWrapper>
-      <AntLayout {...props}>{props.children}</AntLayout>
-    </ThemeWrapper>
-  );
+  return <AntLayout {...props}>{props.children}</AntLayout>;
 };
 
 Layout.Header = (props) => {

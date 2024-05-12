@@ -1,263 +1,274 @@
-// DatePicker Props 
+// DatePicker Props
 
 export const api = {
-    "allowClear": {
-        "control": {
-            "type": "boolean | { clearIcon?: ReactNode }"
-        },
-        "description": "Customize clear button",
-        "default": "true"
+  allowClear: {
+    control: {
+      type: "boolean | { clearIcon?: ReactNode }",
     },
-    "autoFocus": {
-        "control": {
-            "type": "boolean"
-        },
-        "description": "If get focus when component mounted",
-        "default": "false"
+    description: "Customize clear button",
+    default: "true",
+  },
+  autoFocus: {
+    control: {
+      type: "boolean",
     },
-    "className": {
-        "control": {
-            "type": "string"
-        },
-        "description": "The picker className",
-        "default": "-"
+    description: "If get focus when component mounted",
+    default: "false",
+  },
+  className: {
+    control: {
+      type: "string",
     },
-    "dateRender": {
-        "control": {
-            "type": "function(currentDate: dayjs, today: dayjs) => React.ReactNode"
-        },
-        "description": "Custom rendering function for date cells, >= 5.4.0 use cellRender instead.",
-        "default": "-"
+    description: "The picker className",
+    default: "-",
+  },
+  dateRender: {
+    control: {
+      type: "function(currentDate: dayjs, today: dayjs) => React.ReactNode",
     },
-    "cellRender": {
-        "control": {
-            "type": "(current: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' | 'end', type: PanelMode, locale?: Locale, subType?: 'hour' | 'minute' | 'second' | 'meridiem' }) => React.ReactNode"
-        },
-        "description": "Custom rendering function for picker cells",
-        "default": "-"
+    description:
+      "Custom rendering function for date cells, >= 5.4.0 use cellRender instead.",
+    default: "-",
+  },
+  cellRender: {
+    control: {
+      type: "(current: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' | 'end', type: PanelMode, locale?: Locale, subType?: 'hour' | 'minute' | 'second' | 'meridiem' }) => React.ReactNode",
     },
-    "components": {
-        "control": {
-            "type": "Record<Panel | 'input', React.ComponentType>"
-        },
-        "description": "Custom panels",
-        "default": "-"
+    description: "Custom rendering function for picker cells",
+    default: "-",
+  },
+  components: {
+    control: {
+      type: "Record<Panel | 'input', React.ComponentType>",
     },
-    "disabled": {
-        "control": {
-            "type": "boolean"
-        },
-        "description": "Determine whether the DatePicker is disabled",
-        "default": "false"
+    description: "Custom panels",
+    default: "-",
+  },
+  disabled: {
+    control: {
+      type: "boolean",
     },
-    "disabledDate": {
-        "control": {
-            "type": "(currentDate: dayjs, info: { from?: dayjs }) => boolean"
-        },
-        "description": "Specify the date that cannot be selected",
-        "default": "-"
+    description: "Determine whether the DatePicker is disabled",
+    default: "false",
+  },
+  disabledDate: {
+    control: {
+      type: "(currentDate: dayjs, info: { from?: dayjs }) => boolean",
     },
-    "format": {
-        "control": {
-            "type": "formatType"
-        },
-        "description": "To set the date format, support multi-format matching when it is an array, display the first one shall prevail. refer to dayjs#format. for example: Custom Format",
-        "default": "rc-picker"
+    description: "Specify the date that cannot be selected",
+    default: "-",
+  },
+  format: {
+    control: {
+      type: "formatType",
     },
-    "order": {
-        "control": {
-            "type": "boolean"
-        },
-        "description": "Auto order date when multiple or range selection",
-        "default": "true"
+    description:
+      "To set the date format, support multi-format matching when it is an array, display the first one shall prevail. refer to dayjs#format. for example: Custom Format",
+    default: "rc-picker",
+  },
+  order: {
+    control: {
+      type: "boolean",
     },
-    "popupClassName": {
-        "control": {
-            "type": "string"
-        },
-        "description": "To customize the className of the popup calendar",
-        "default": "-"
+    description: "Auto order date when multiple or range selection",
+    default: "true",
+  },
+  popupClassName: {
+    control: {
+      type: "string",
     },
-    "preserveInvalidOnBlur": {
-        "control": {
-            "type": "boolean"
-        },
-        "description": "Not clean input on blur even when the typing is invalidate",
-        "default": "false"
+    description: "To customize the className of the popup calendar",
+    default: "-",
+  },
+  preserveInvalidOnBlur: {
+    control: {
+      type: "boolean",
     },
-    "getPopupContainer": {
-        "control": {
-            "type": "function(trigger)"
-        },
-        "description": "To set the container of the floating layer, while the default is to create a div element in body",
-        "default": "-"
+    description: "Not clean input on blur even when the typing is invalidate",
+    default: "false",
+  },
+  getPopupContainer: {
+    control: {
+      type: "function(trigger)",
     },
-    "inputReadOnly": {
-        "control": {
-            "type": "boolean"
-        },
-        "description": "Set the readonly attribute of the input tag (avoids virtual keyboard on touch devices)",
-        "default": "false"
+    description:
+      "To set the container of the floating layer, while the default is to create a div element in body",
+    default: "-",
+  },
+  inputReadOnly: {
+    control: {
+      type: "boolean",
     },
-    "locale": {
-        "control": {
-            "type": "object"
-        },
-        "description": "Localization configuration",
-        "default": "default"
+    description:
+      "Set the readonly attribute of the input tag (avoids virtual keyboard on touch devices)",
+    default: "false",
+  },
+  locale: {
+    control: {
+      type: "object",
     },
-    "minDate": {
-        "control": {
-            "type": "dayjs"
-        },
-        "description": "The minimum date, which also limits the range of panel switching",
-        "default": "-"
+    description: "Localization configuration",
+    default: "default",
+  },
+  minDate: {
+    control: {
+      type: "dayjs",
     },
-    "maxDate": {
-        "control": {
-            "type": "dayjs"
-        },
-        "description": "The maximum date, which also limits the range of panel switching",
-        "default": "-"
+    description:
+      "The minimum date, which also limits the range of panel switching",
+    default: "-",
+  },
+  maxDate: {
+    control: {
+      type: "dayjs",
     },
-    "mode": {
-        "control": {
-            "type": "time | date | month | year | decade"
-        },
-        "description": "The picker panel mode\uff08 Cannot select year or month anymore? )",
-        "default": "-"
+    description:
+      "The maximum date, which also limits the range of panel switching",
+    default: "-",
+  },
+  mode: {
+    control: {
+      type: "time | date | month | year | decade",
     },
-    "needConfirm": {
-        "control": {
-            "type": "boolean"
-        },
-        "description": "Need click confirm button to trigger value change. Default false when multiple",
-        "default": "-"
+    description:
+      "The picker panel mode\uff08 Cannot select year or month anymore? )",
+    default: "-",
+  },
+  needConfirm: {
+    control: {
+      type: "boolean",
     },
-    "nextIcon": {
-        "control": {
-            "type": "ReactNode"
-        },
-        "description": "The custom next icon",
-        "default": "-"
+    description:
+      "Need click confirm button to trigger value change. Default false when multiple",
+    default: "-",
+  },
+  nextIcon: {
+    control: {
+      type: "ReactNode",
     },
-    "open": {
-        "control": {
-            "type": "boolean"
-        },
-        "description": "The open state of picker",
-        "default": "-"
+    description: "The custom next icon",
+    default: "-",
+  },
+  open: {
+    control: {
+      type: "boolean",
     },
-    "panelRender": {
-        "control": {
-            "type": "(panelNode) => ReactNode"
-        },
-        "description": "Customize panel render",
-        "default": "-"
+    description: "The open state of picker",
+    default: "-",
+  },
+  panelRender: {
+    control: {
+      type: "(panelNode) => ReactNode",
     },
-    "picker": {
-        "control": {
-            "type": "date | week | month | quarter | year"
-        },
-        "description": "Set picker type",
-        "default": "date"
+    description: "Customize panel render",
+    default: "-",
+  },
+  picker: {
+    control: {
+      type: "date | week | month | quarter | year",
     },
-    "placeholder": {
-        "control": {
-            "type": "string | [string,string]"
-        },
-        "description": "The placeholder of date input",
-        "default": "-"
+    description: "Set picker type",
+    default: "date",
+  },
+  placeholder: {
+    control: {
+      type: "string | [string,string]",
     },
-    "placement": {
-        "control": {
-            "type": "bottomLeft bottomRight topLeft topRight"
-        },
-        "description": "The position where the selection box pops up",
-        "default": "bottomLeft"
+    description: "The placeholder of date input",
+    default: "-",
+  },
+  placement: {
+    control: {
+      type: "bottomLeft bottomRight topLeft topRight",
     },
-    "popupStyle": {
-        "control": {
-            "type": "CSSProperties"
-        },
-        "description": "To customize the style of the popup calendar",
-        "default": "{}"
+    description: "The position where the selection box pops up",
+    default: "bottomLeft",
+  },
+  popupStyle: {
+    control: {
+      type: "CSSProperties",
     },
-    "presets": {
-        "control": {
-            "type": "{ label: React.ReactNode, value: Dayjs | (() => Dayjs) }[]"
-        },
-        "description": "The preset ranges for quick selection, Since 5.8.0, preset value supports callback function.",
-        "default": "-"
+    description: "To customize the style of the popup calendar",
+    default: "{}",
+  },
+  presets: {
+    control: {
+      type: "{ label: React.ReactNode, value: Dayjs | (() => Dayjs) }[]",
     },
-    "prevIcon": {
-        "control": {
-            "type": "ReactNode"
-        },
-        "description": "The custom prev icon",
-        "default": "-"
+    description:
+      "The preset ranges for quick selection, Since 5.8.0, preset value supports callback function.",
+    default: "-",
+  },
+  prevIcon: {
+    control: {
+      type: "ReactNode",
     },
-    "size": {
-        "control": {
-            "type": "large | middle | small"
-        },
-        "description": "To determine the size of the input box, the height of large and small, are 40px and 24px respectively, while default size is 32px",
-        "default": "-"
+    description: "The custom prev icon",
+    default: "-",
+  },
+  size: {
+    control: {
+      type: "large | middle | small",
     },
-    "status": {
-        "control": {
-            "type": "'error' | 'warning'"
-        },
-        "description": "Set validation status",
-        "default": "-"
+    description:
+      "To determine the size of the input box, the height of large and small, are 40px and 24px respectively, while default size is 32px",
+    default: "-",
+  },
+  status: {
+    control: {
+      type: "'error' | 'warning'",
     },
-    "style": {
-        "control": {
-            "type": "CSSProperties"
-        },
-        "description": "To customize the style of the input box",
-        "default": "{}"
+    description: "Set validation status",
+    default: "-",
+  },
+  style: {
+    control: {
+      type: "CSSProperties",
     },
-    "suffixIcon": {
-        "control": {
-            "type": "ReactNode"
-        },
-        "description": "The custom suffix icon",
-        "default": "-"
+    description: "To customize the style of the input box",
+    default: "{}",
+  },
+  suffixIcon: {
+    control: {
+      type: "ReactNode",
     },
-    "superNextIcon": {
-        "control": {
-            "type": "ReactNode"
-        },
-        "description": "The custom super next icon",
-        "default": "-"
+    description: "The custom suffix icon",
+    default: "-",
+  },
+  superNextIcon: {
+    control: {
+      type: "ReactNode",
     },
-    "superPrevIcon": {
-        "control": {
-            "type": "ReactNode"
-        },
-        "description": "The custom super prev icon",
-        "default": "-"
+    description: "The custom super next icon",
+    default: "-",
+  },
+  superPrevIcon: {
+    control: {
+      type: "ReactNode",
     },
-    "variant": {
-        "control": {
-            "type": "outlined | borderless | filled"
-        },
-        "description": "Variants of picker",
-        "default": "outlined"
+    description: "The custom super prev icon",
+    default: "-",
+  },
+  variant: {
+    control: {
+      type: "outlined | borderless | filled",
     },
-    "onOpenChange": {
-        "control": {
-            "type": "function(open)"
-        },
-        "description": "Callback function, can be executed whether the popup calendar is popped up or closed",
-        "default": "-"
+    description: "Variants of picker",
+    default: "outlined",
+  },
+  onOpenChange: {
+    control: {
+      type: "function(open)",
     },
-    "onPanelChange": {
-        "control": {
-            "type": "function(value, mode)"
-        },
-        "description": "Callback when picker panel mode is changed",
-        "default": "-"
-    }
-}
+    description:
+      "Callback function, can be executed whether the popup calendar is popped up or closed",
+    default: "-",
+  },
+  onPanelChange: {
+    control: {
+      type: "function(value, mode)",
+    },
+    description: "Callback when picker panel mode is changed",
+    default: "-",
+  },
+};

@@ -1,60 +1,60 @@
-// Image Props 
+// Image Props
 
 export const api = {
-    "alt": {
-        "control": {
-            "type": "string"
-        },
-        "description": "Image description",
-        "default": "-"
+  alt: {
+    control: {
+      type: "string",
     },
-    "fallback": {
-        "control": {
-            "type": "string"
-        },
-        "description": "Load failure fault-tolerant src",
-        "default": "-"
+    description: "Image description",
+    default: "-",
+  },
+  fallback: {
+    control: {
+      type: "string",
     },
-    "height": {
-        "control": {
-            "type": "string | number"
-        },
-        "description": "Image height",
-        "default": "-"
+    description: "Load failure fault-tolerant src",
+    default: "-",
+  },
+  height: {
+    control: {
+      type: "string | number",
     },
-    "placeholder": {
-        "control": {
-            "type": "ReactNode"
-        },
-        "description": "Load placeholder, use default placeholder when set true",
-        "default": "-"
+    description: "Image height",
+    default: "-",
+  },
+  placeholder: {
+    control: {
+      type: "ReactNode",
     },
-    "preview": {
-        "control": {
-            "type": "boolean | PreviewType"
-        },
-        "description": "preview config, disabled when false",
-        "default": "true"
+    description: "Load placeholder, use default placeholder when set true",
+    default: "-",
+  },
+  preview: {
+    control: {
+      type: "boolean | PreviewType",
     },
-    "src": {
-        "control": {
-            "type": "string"
-        },
-        "description": "Image path",
-        "default": "-"
+    description: "preview config, disabled when false",
+    default: "true",
+  },
+  src: {
+    control: {
+      type: "string",
     },
-    "width": {
-        "control": {
-            "type": "string | number"
-        },
-        "description": "Image width",
-        "default": "-"
+    description: "Image path",
+    default: "-",
+  },
+  width: {
+    control: {
+      type: "string | number",
     },
-    "onError": {
-        "control": {
-            "type": "(event: Event) => void"
-        },
-        "description": "Load failed callback",
-        "default": "-"
-    }
-}
+    description: "Image width",
+    default: "-",
+  },
+  onError: {
+    control: {
+      type: "(event: Event) => void",
+    },
+    description: "Load failed callback",
+    default: "-",
+  },
+};

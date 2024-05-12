@@ -1,88 +1,90 @@
-// Anchor Props 
+// Anchor Props
 
 export const api = {
-    "affix": {
-        "control": {
-            "type": "boolean"
-        },
-        "description": "Fixed mode of Anchor",
-        "default": "true"
+  affix: {
+    control: {
+      type: "boolean",
     },
-    "bounds": {
-        "control": {
-            "type": "number"
-        },
-        "description": "Bounding distance of anchor area",
-        "default": "5"
+    description: "Fixed mode of Anchor",
+    default: "true",
+  },
+  bounds: {
+    control: {
+      type: "number",
     },
-    "getContainer": {
-        "control": {
-            "type": "() => HTMLElement"
-        },
-        "description": "Scrolling container",
-        "default": "() => window"
+    description: "Bounding distance of anchor area",
+    default: "5",
+  },
+  getContainer: {
+    control: {
+      type: "() => HTMLElement",
     },
-    "getCurrentAnchor": {
-        "control": {
-            "type": "(activeLink: string) => string"
-        },
-        "description": "Customize the anchor highlight",
-        "default": "-"
+    description: "Scrolling container",
+    default: "() => window",
+  },
+  getCurrentAnchor: {
+    control: {
+      type: "(activeLink: string) => string",
     },
-    "offsetTop": {
-        "control": {
-            "type": "number"
-        },
-        "description": "Pixels to offset from top when calculating position of scroll",
-        "default": "0"
+    description: "Customize the anchor highlight",
+    default: "-",
+  },
+  offsetTop: {
+    control: {
+      type: "number",
     },
-    "showInkInFixed": {
-        "control": {
-            "type": "boolean"
-        },
-        "description": "Whether show ink-square when affix={false}",
-        "default": "false"
+    description:
+      "Pixels to offset from top when calculating position of scroll",
+    default: "0",
+  },
+  showInkInFixed: {
+    control: {
+      type: "boolean",
     },
-    "targetOffset": {
-        "control": {
-            "type": "number"
-        },
-        "description": "Anchor scroll offset, default as offsetTop, example",
-        "default": "-"
+    description: "Whether show ink-square when affix={false}",
+    default: "false",
+  },
+  targetOffset: {
+    control: {
+      type: "number",
     },
-    "onChange": {
-        "control": {
-            "type": "(currentActiveLink: string) => void"
-        },
-        "description": "Listening for anchor link change",
-        "default": ""
+    description: "Anchor scroll offset, default as offsetTop, example",
+    default: "-",
+  },
+  onChange: {
+    control: {
+      type: "(currentActiveLink: string) => void",
     },
-    "onClick": {
-        "control": {
-            "type": "(e: MouseEvent, link: object) => void"
-        },
-        "description": "Set the handler to handle click event",
-        "default": "-"
+    description: "Listening for anchor link change",
+    default: "",
+  },
+  onClick: {
+    control: {
+      type: "(e: MouseEvent, link: object) => void",
     },
-    "items": {
-        "control": {
-            "type": "{ key, href, title, target, children }[] see"
-        },
-        "description": "Data configuration option content, support nesting through children",
-        "default": "-"
+    description: "Set the handler to handle click event",
+    default: "-",
+  },
+  items: {
+    control: {
+      type: "{ key, href, title, target, children }[] see",
     },
-    "direction": {
-        "control": {
-            "type": "vertical | horizontal"
-        },
-        "description": "Set Anchor direction",
-        "default": "vertical"
+    description:
+      "Data configuration option content, support nesting through children",
+    default: "-",
+  },
+  direction: {
+    control: {
+      type: "vertical | horizontal",
     },
-    "replace": {
-        "control": {
-            "type": "boolean"
-        },
-        "description": "Replace items' href in browser history instead of pushing it",
-        "default": "false"
-    }
-}
+    description: "Set Anchor direction",
+    default: "vertical",
+  },
+  replace: {
+    control: {
+      type: "boolean",
+    },
+    description: "Replace items' href in browser history instead of pushing it",
+    default: "false",
+  },
+};

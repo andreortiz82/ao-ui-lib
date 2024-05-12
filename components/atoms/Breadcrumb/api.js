@@ -1,32 +1,32 @@
-// Breadcrumb Props 
+// Breadcrumb Props
 
 export const api = {
-    "itemRender": {
-        "control": {
-            "type": "(route, params, routes, paths) => ReactNode"
-        },
-        "description": "Custom item renderer",
-        "default": "-"
+  itemRender: {
+    control: {
+      type: "(route, params, routes, paths) => ReactNode",
     },
-    "params": {
-        "control": {
-            "type": "object"
-        },
-        "description": "Routing parameters",
-        "default": "-"
+    description: "Custom item renderer",
+    default: "-",
+  },
+  params: {
+    control: {
+      type: "object",
     },
-    "items": {
-        "control": {
-            "type": "ItemType[]"
-        },
-        "description": "The routing stack information of router",
-        "default": "-"
+    description: "Routing parameters",
+    default: "-",
+  },
+  items: {
+    control: {
+      type: "ItemType[]",
     },
-    "separator": {
-        "control": {
-            "type": "ReactNode"
-        },
-        "description": "Custom separator",
-        "default": "/"
-    }
-}
+    description: "The routing stack information of router",
+    default: "-",
+  },
+  separator: {
+    control: {
+      type: "ReactNode",
+    },
+    description: "Custom separator",
+    default: "/",
+  },
+};

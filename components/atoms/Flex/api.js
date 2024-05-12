@@ -1,53 +1,57 @@
-// Flex Props 
+// Flex Props
 
 export const api = {
-    "vertical": {
-        "control": {
-            "type": "boolean"
-        },
-        "description": "Is direction of the flex vertical, use flex-direction: column",
-        "default": "false"
+  vertical: {
+    control: {
+      type: "boolean",
     },
-    "wrap": {
-        "control": {
-            "type": "flex-wrap | boolean"
-        },
-        "description": "Set whether the element is displayed in a single line or in multiple lines",
-        "default": "nowrap"
+    description:
+      "Is direction of the flex vertical, use flex-direction: column",
+    default: "false",
+  },
+  wrap: {
+    control: {
+      type: "flex-wrap | boolean",
     },
-    "justify": {
-        "control": {
-            "type": "justify-content"
-        },
-        "description": "Sets the alignment of elements in the direction of the main axis",
-        "default": "normal"
+    description:
+      "Set whether the element is displayed in a single line or in multiple lines",
+    default: "nowrap",
+  },
+  justify: {
+    control: {
+      type: "justify-content",
     },
-    "align": {
-        "control": {
-            "type": "align-items"
-        },
-        "description": "Sets the alignment of elements in the direction of the cross axis",
-        "default": "normal"
+    description:
+      "Sets the alignment of elements in the direction of the main axis",
+    default: "normal",
+  },
+  align: {
+    control: {
+      type: "align-items",
     },
-    "flex": {
-        "control": {
-            "type": "flex"
-        },
-        "description": "flex CSS shorthand properties",
-        "default": "normal"
+    description:
+      "Sets the alignment of elements in the direction of the cross axis",
+    default: "normal",
+  },
+  flex: {
+    control: {
+      type: "flex",
     },
-    "gap": {
-        "control": {
-            "type": "small | middle | large | string | number"
-        },
-        "description": "Sets the gap between grids",
-        "default": "-"
+    description: "flex CSS shorthand properties",
+    default: "normal",
+  },
+  gap: {
+    control: {
+      type: "small | middle | large | string | number",
     },
-    "component": {
-        "control": {
-            "type": "React.ComponentType"
-        },
-        "description": "custom element type",
-        "default": "div"
-    }
-}
+    description: "Sets the gap between grids",
+    default: "-",
+  },
+  component: {
+    control: {
+      type: "React.ComponentType",
+    },
+    description: "custom element type",
+    default: "div",
+  },
+};

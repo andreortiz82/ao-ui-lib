@@ -1,18 +1,18 @@
-// Popover Props 
+// Popover Props
 
 export const api = {
-    "content": {
-        "control": {
-            "type": "ReactNode | () => ReactNode"
-        },
-        "description": "Content of the card",
-        "default": "-"
+  content: {
+    control: {
+      type: "ReactNode | () => ReactNode",
     },
-    "title": {
-        "control": {
-            "type": "ReactNode | () => ReactNode"
-        },
-        "description": "Title of the card",
-        "default": "-"
-    }
-}
+    description: "Content of the card",
+    default: "-",
+  },
+  title: {
+    control: {
+      type: "ReactNode | () => ReactNode",
+    },
+    description: "Title of the card",
+    default: "-",
+  },
+};

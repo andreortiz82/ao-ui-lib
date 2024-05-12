@@ -1,8 +1,6 @@
-
-  import React from "react";
-import ThemeWrapper from "../../theme/ThemeWrapper";
-  import { Calendar as AntCalendar } from 'antd';
+import React from "react";
+import { Calendar as AntCalendar } from "antd";
 
 export const Calendar = (props) => {
-  return <ThemeWrapper><AntCalendar {...props}>{props.children}</AntCalendar></ThemeWrapper>
-}
+  return <AntCalendar {...props} />;
+};

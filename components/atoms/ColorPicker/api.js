@@ -1,158 +1,158 @@
-// ColorPicker Props 
+// ColorPicker Props
 
 export const api = {
-    "allowClear": {
-        "control": {
-            "type": "boolean"
-        },
-        "description": "Allow clearing color selected",
-        "default": "false"
+  allowClear: {
+    control: {
+      type: "boolean",
     },
-    "arrow": {
-        "control": {
-            "type": "boolean | { pointAtCenter: boolean }"
-        },
-        "description": "Configuration for popup arrow",
-        "default": "true"
+    description: "Allow clearing color selected",
+    default: "false",
+  },
+  arrow: {
+    control: {
+      type: "boolean | { pointAtCenter: boolean }",
     },
-    "children": {
-        "control": {
-            "type": "React.ReactNode"
-        },
-        "description": "Trigger of ColorPicker",
-        "default": "-"
+    description: "Configuration for popup arrow",
+    default: "true",
+  },
+  children: {
+    control: {
+      type: "React.ReactNode",
     },
-    "defaultValue": {
-        "control": {
-            "type": "string | Color"
-        },
-        "description": "Default value of color",
-        "default": "-"
+    description: "Trigger of ColorPicker",
+    default: "-",
+  },
+  defaultValue: {
+    control: {
+      type: "string | Color",
     },
-    "defaultFormat": {
-        "control": {
-            "type": "rgb | hex | hsb"
-        },
-        "description": "Default format of color",
-        "default": "-"
+    description: "Default value of color",
+    default: "-",
+  },
+  defaultFormat: {
+    control: {
+      type: "rgb | hex | hsb",
     },
-    "disabled": {
-        "control": {
-            "type": "boolean"
-        },
-        "description": "Disable ColorPicker",
-        "default": "-"
+    description: "Default format of color",
+    default: "-",
+  },
+  disabled: {
+    control: {
+      type: "boolean",
     },
-    "disabledAlpha": {
-        "control": {
-            "type": "boolean"
-        },
-        "description": "Disable Alpha",
-        "default": "-"
+    description: "Disable ColorPicker",
+    default: "-",
+  },
+  disabledAlpha: {
+    control: {
+      type: "boolean",
     },
-    "destroyTooltipOnHide": {
-        "control": {
-            "type": "boolean"
-        },
-        "description": "Whether destroy popover when hidden",
-        "default": "false"
+    description: "Disable Alpha",
+    default: "-",
+  },
+  destroyTooltipOnHide: {
+    control: {
+      type: "boolean",
     },
-    "format": {
-        "control": {
-            "type": "rgb | hex | hsb"
-        },
-        "description": "Format of color",
-        "default": "hex"
+    description: "Whether destroy popover when hidden",
+    default: "false",
+  },
+  format: {
+    control: {
+      type: "rgb | hex | hsb",
     },
-    "open": {
-        "control": {
-            "type": "boolean"
-        },
-        "description": "Whether to show popup",
-        "default": "-"
+    description: "Format of color",
+    default: "hex",
+  },
+  open: {
+    control: {
+      type: "boolean",
     },
-    "presets": {
-        "control": {
-            "type": "{ label: ReactNode, colors: Array<string | Color>, defaultOpen?: boolean }[]"
-        },
-        "description": "Preset colors",
-        "default": "-"
+    description: "Whether to show popup",
+    default: "-",
+  },
+  presets: {
+    control: {
+      type: "{ label: ReactNode, colors: Array<string | Color>, defaultOpen?: boolean }[]",
     },
-    "placement": {
-        "control": {
-            "type": "top | topLeft | topRight | bottom | bottomLeft | bottomRight"
-        },
-        "description": "Placement of popup",
-        "default": "bottomLeft"
+    description: "Preset colors",
+    default: "-",
+  },
+  placement: {
+    control: {
+      type: "top | topLeft | topRight | bottom | bottomLeft | bottomRight",
     },
-    "panelRender": {
-        "control": {
-            "type": "(panel: React.ReactNode, extra: { components: { Picker: FC; Presets: FC } }) => React.ReactNode"
-        },
-        "description": "Custom Render Panel",
-        "default": "-"
+    description: "Placement of popup",
+    default: "bottomLeft",
+  },
+  panelRender: {
+    control: {
+      type: "(panel: React.ReactNode, extra: { components: { Picker: FC; Presets: FC } }) => React.ReactNode",
     },
-    "showText": {
-        "control": {
-            "type": "boolean | (color: Color) => React.ReactNode"
-        },
-        "description": "Show color text",
-        "default": "-"
+    description: "Custom Render Panel",
+    default: "-",
+  },
+  showText: {
+    control: {
+      type: "boolean | (color: Color) => React.ReactNode",
     },
-    "size": {
-        "control": {
-            "type": "large | middle | small"
-        },
-        "description": "Setting the trigger size",
-        "default": "middle"
+    description: "Show color text",
+    default: "-",
+  },
+  size: {
+    control: {
+      type: "large | middle | small",
     },
-    "trigger": {
-        "control": {
-            "type": "hover | click"
-        },
-        "description": "ColorPicker trigger mode",
-        "default": "click"
+    description: "Setting the trigger size",
+    default: "middle",
+  },
+  trigger: {
+    control: {
+      type: "hover | click",
     },
-    "value": {
-        "control": {
-            "type": "string | Color"
-        },
-        "description": "Value of color",
-        "default": "-"
+    description: "ColorPicker trigger mode",
+    default: "click",
+  },
+  value: {
+    control: {
+      type: "string | Color",
     },
-    "onChange": {
-        "control": {
-            "type": "(value: Color, hex: string) => void"
-        },
-        "description": "Callback when value is changed",
-        "default": "-"
+    description: "Value of color",
+    default: "-",
+  },
+  onChange: {
+    control: {
+      type: "(value: Color, hex: string) => void",
     },
-    "onChangeComplete": {
-        "control": {
-            "type": "(value: Color) => void"
-        },
-        "description": "Called when color pick ends",
-        "default": "-"
+    description: "Callback when value is changed",
+    default: "-",
+  },
+  onChangeComplete: {
+    control: {
+      type: "(value: Color) => void",
     },
-    "onFormatChange": {
-        "control": {
-            "type": "(format: 'hex' | 'rgb' | 'hsb') => void"
-        },
-        "description": "Callback when format is changed",
-        "default": "-"
+    description: "Called when color pick ends",
+    default: "-",
+  },
+  onFormatChange: {
+    control: {
+      type: "(format: 'hex' | 'rgb' | 'hsb') => void",
     },
-    "onOpenChange": {
-        "control": {
-            "type": "(open: boolean) => void"
-        },
-        "description": "Callback when open is changed",
-        "default": "-"
+    description: "Callback when format is changed",
+    default: "-",
+  },
+  onOpenChange: {
+    control: {
+      type: "(open: boolean) => void",
     },
-    "onClear": {
-        "control": {
-            "type": "() => void"
-        },
-        "description": "Called when clear",
-        "default": "-"
-    }
-}
+    description: "Callback when open is changed",
+    default: "-",
+  },
+  onClear: {
+    control: {
+      type: "() => void",
+    },
+    description: "Called when clear",
+    default: "-",
+  },
+};

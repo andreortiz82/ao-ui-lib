@@ -1,8 +1,6 @@
-
-  import React from "react";
-import ThemeWrapper from "../../theme/ThemeWrapper";
-  import { Statistic as AntStatistic } from 'antd';
+import React from "react";
+import { Statistic as AntStatistic } from "antd";
 
 export const Statistic = (props) => {
-  return <ThemeWrapper><AntStatistic {...props}>{props.children}</AntStatistic></ThemeWrapper>
-}
+  return <AntStatistic {...props}>{props.children}</AntStatistic>;
+};

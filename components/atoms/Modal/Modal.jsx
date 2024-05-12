@@ -1,8 +1,6 @@
-
-  import React from "react";
-import ThemeWrapper from "../../theme/ThemeWrapper";
-  import { Modal as AntModal } from 'antd';
+import React from "react";
+import { Modal as AntModal } from "antd";
 
 export const Modal = (props) => {
-  return <ThemeWrapper><AntModal {...props}>{props.children}</AntModal></ThemeWrapper>
-}
+  return <AntModal {...props}>{props.children}</AntModal>;
+};

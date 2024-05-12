@@ -1,8 +1,6 @@
-
-  import React from "react";
-import ThemeWrapper from "../../theme/ThemeWrapper";
-  import { Popover as AntPopover } from 'antd';
+import React from "react";
+import { Popover as AntPopover } from "antd";
 
 export const Popover = (props) => {
-  return <ThemeWrapper><AntPopover {...props}>{props.children}</AntPopover></ThemeWrapper>
-}
+  return <AntPopover {...props}>{props.children}</AntPopover>;
+};

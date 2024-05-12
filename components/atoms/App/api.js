@@ -1,25 +1,25 @@
-// App Props 
+// App Props
 
 export const api = {
-    "component": {
-        "control": {
-            "type": "ComponentType"
-        },
-        "description": "Config render element, if false will not create DOM node",
-        "default": "div"
+  component: {
+    control: {
+      type: "ComponentType",
     },
-    "message": {
-        "control": {
-            "type": "MessageConfig"
-        },
-        "description": "Global config for Message",
-        "default": "-"
+    description: "Config render element, if false will not create DOM node",
+    default: "div",
+  },
+  message: {
+    control: {
+      type: "MessageConfig",
     },
-    "notification": {
-        "control": {
-            "type": "NotificationConfig"
-        },
-        "description": "Global config for Notification",
-        "default": "-"
-    }
-}
+    description: "Global config for Message",
+    default: "-",
+  },
+  notification: {
+    control: {
+      type: "NotificationConfig",
+    },
+    description: "Global config for Notification",
+    default: "-",
+  },
+};
