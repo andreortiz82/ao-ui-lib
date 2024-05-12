@@ -1,3 +1,4 @@
-import Button from "./components/atoms/Button";
-import Input from "./components/atoms/Input";
-export { Button, Input };
+import { AntThemeWrapper } from "./components/themes/AntThemeWrapper";
+import { JoyThemeWrapper } from "./components/themes/JoyThemeWrapper";
+
+export { AntThemeWrapper, JoyThemeWrapper };
