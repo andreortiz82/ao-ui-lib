@@ -3,7 +3,7 @@ import { AntThemeWrapper } from "./index";
 import { Button, Space } from "antd";
 
 export default {
-  title: "Organisms/Ant Theme Wrapper",
+  title: "Themes/Ant Design",
   component: AntThemeWrapper,
   tags: ["autodocs"],
 };

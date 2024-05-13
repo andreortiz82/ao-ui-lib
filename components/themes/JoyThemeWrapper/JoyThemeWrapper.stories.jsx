@@ -4,7 +4,7 @@ import Box from "@mui/joy/Box";
 import Button from "@mui/joy/Button";
 
 export default {
-  title: "Organisms/Joy Theme Wrapper",
+  title: "Themes/Joy UI",
   component: JoyThemeWrapper,
   tags: ["autodocs"],
 };
